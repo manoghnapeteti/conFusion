@@ -46,8 +46,8 @@
                     <img src="img/logo.png" class="img-fluid">
                 </div>
                 <div class="col-md-3 col-sm-12 align-self-center">
-                <form action="index.html#card">
-                    <button type="submit" class=" reserve btn btn-warning">Reserve Table</button>
+                <form action="#card">
+                    <button type="submit" class=" reserve btn btn-warning" data-toggle="tooltip" data-html="true" title="Or Call us at <br><strong>+852 123456789</strong>"data-placement="bottom">Reserve Table</button>
                 </form>
                 </div>
             </div>
@@ -205,6 +205,12 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function()
+        {
+            $('[data-toggle="tooltip"]') .tooltip();     
+        });
+    </script>
 </body>
 
 </html>

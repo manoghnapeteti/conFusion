@@ -48,7 +48,7 @@
                 </div>
                 <div class="col-md-3 col-sm-12 align-self-center">
                 <form action="#card">
-                    <button type="submit" class=" reserve btn btn-warning">Reserve Table</button>
+                    <button type="submit" class=" reserve btn btn-warning" data-toggle="tooltip" data-html="true" title="Or Call us at <br><strong>+852 123456789</strong>"data-placement="bottom">Reserve Table</button>
                 </form>
                 </div>
             </div>
@@ -163,14 +163,6 @@
         </div>
     </div>
 </div>
-
-
-    
-    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
-    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-</body>
 <footer class="footer">
 
         <div class="container">
@@ -248,17 +240,22 @@
            </div>
 
            <div class="row  justify-content-center">             
-
                 <div class="col-auto">
-
                     <p>© Copyright 2018 Ristorante Con Fusion</p>
-
                 </div>
-
            </div>
-
         </div>
 
     </footer>
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function()
+        {
+            $('[data-toggle="tooltip"]') .tooltip();     
+        });
+    </script>
+</body>
 
 </html>
