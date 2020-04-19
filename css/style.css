@@ -38,6 +38,35 @@
 	background-colorl:#FFFF00;
 }
 .btn {
-    width:250px;
+    
     padding:5px;
+}
+.carousel
+{
+	background: #512DA8;
+}
+.carousel-item
+{
+	height: 300px;
+}
+.carousel-item img
+{
+	position: absolute;
+	top:0;
+	left:0;
+	min-height: 300px;
+}
+#Label
+{
+	color:black;
+}
+#non-smoking
+{
+	width: 125px;
+}
+#carouselButton
+{
+	right:0px;
+	position:absolute;
+	bottom:0px;
 }
