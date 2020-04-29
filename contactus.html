@@ -31,13 +31,14 @@
                         <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
                 </ul>
                 <span class="navbar-text">
-                    <a data-toggle="modal" data-target="#loginModal">
+                    <a data-toggle="modal" data-target="myloginmodal" id="mylogin">
                         <span class="fa fa-sign-in"></span>   Login</a>
                   </span>
-            </div>
+              </div>
         </div>
+
     </nav>
-    <div id="loginModal" class="modal fade" role="dialog">
+    <div id="myloginmodal" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg" role="content">
             <div class="modal-content">
                 <div class="modal-header">
@@ -86,13 +87,14 @@
                     <img src="img/logo.png" class="img-fluid">
                 </div>
                <div class="col-md-3 col-sm-12 align-self-center">
-                    <button type="submit" class=" reserve btn btn-warning" id="resTable" data-toggle="modal" data-target="#card"data-html="true">Reserve Table</button>
+                    <button type="button" id="resTable" class=" reserve btn btn-warning" id="resTable" data-target="#card"
+                    data-html="true">Reserve Table</button>
                 </div>
                 </div>
             </div>
         </div>
         <div class="col-md-8 col-sm">
-        <div id="card" class="modal fade" role="dialog">
+        <div id="myreserve" class="modal fade" role="dialog">
             <div class="modal-dialog modal-lg" role="content">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -326,6 +328,25 @@
             $('[data-toggle="tooltip"]') .tooltip();     
         });
     </script>
+    <script>
+        $(document).ready(function()
+        {
+            $('#mylogin').click(function(){
+                 $('#myloginmodal').modal();    
+            });
+           
+        });  // initialized with no keyboard
+</script>
+<script>
+     $(document).ready(function()
+        {
+            $('#resTable').click(function(){
+            $('#myreserve').modal();                   
+
+            });
+        });
+    
+</script>
 </body>
 
 </html>

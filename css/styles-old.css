@@ -72,3 +72,13 @@ body
 {
 	width: 125px;
 }
+.modal-header
+{
+background-color:#512DAB;
+color: white;
+}
+.modal-body
+{
+	background-color:#c3bade;
+	color:black; 
+}
